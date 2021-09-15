@@ -1,0 +1,31 @@
+using System;
+using.Text;
+using.System.Globalization;
+using System.Collections.Generic;
+
+namespace controle_estoque
+{
+public class Produto{
+public stringNome;  //declarando
+public double Preco;
+public int Quantidade;
+public double ValorTotalEmEstoque() {
+
+{returnPreco* Quantidade;
+}
+public void AdicionarProduto(int quantidade)
+ {
+Quantidade += quantidade;
+}
+public void RemoverProduto(int quantidade)
+ {
+Quantidade = Quantidade -quantidade;
+}
+public override string ToString() 
+{returnNome
++ ", R$ " 
++ Preco.ToString("F2", CultureInfo.InvariantCulture)
+ + ", " 
++ Quantidade 
++ " unidades, Total: R$ " 
++ ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);}}
