@@ -1,0 +1,38 @@
+using System;
+using.Text;
+using.System.Globalization;
+using System.Collections.Generic;
+
+
+namespace produto
+{
+
+public class Program{
+public void Main(string[] arg)
+{ 
+
+
+Console.WriteLine("Entre com os dados do produto;");
+Console.Write("Nome: ");//pedindo um nome
+string Nome= Console.ReadLine();//armazenando o nome
+Console.Write("Preço: ");//pedindo um preço
+double preco= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);//armazenado o preço e deixando ele neutro
+Console.Write("Quantidade no estoque: ");//exibindo
+int.Quantidade= int.Parse(Console.ReadLine());//pega a quantidade e converte ela a inteiro no formato aceito pelo programa
+
+Produto p = new Produto();//declarando e criando um novo objeto
+
+Console.WriteLine("Dados do produto: " + p);//pegando o dado do produto
+Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque: ");
+int qte= int.Parse(Console.ReadLine());
+p.AdicionarProdutos(qte);// armazenando
+
+Console.WriteLine("Dados do atualizados: " + p);
+
+Console.WriteLine("Digite o número de produtos a serem removidos do estoque: ");
+qte= int.Parse(Console.ReadLine());
+p.RemoverProdutos(qte);
+Console.WriteLine("Dados do atualizados: " + p);
+}
+}
+}
