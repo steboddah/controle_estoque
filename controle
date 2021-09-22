@@ -6,9 +6,9 @@ using System.Collections.Generic;
 namespace controle_estoque
 {
 public class Produto{
-private stringNome;  //declarando
-private double Preco;
-private int Quantidade;
+private string _nome;  //declarando
+private double _preco;
+private int _quantidade;
 
 
 
@@ -19,18 +19,20 @@ public produto(){ //metodo construtor vazio
 }
 public produto(){string nome,doule preco,int quantidade){
 
-Nome=nome;
-Preco=preco;
-Quantidade=quantidade;
+_nome=nome;
+_preco=preco;
+_quantidade=quantidade;
 
-  public string GetNome(){
-  return nome;
+  public string Nome(){
+  get{ return _nome;}
+  set{if value!=null && value Leght >1)
+  _nome=value;
   }
-   public double GetPreco(){
-  return preco;
+   public double Preco(){
+  get(return preco);
   }
-   public int GetQuantidade(){
-  return quantidade;
+   public int Quantidade(){
+ get( return quantidade);
 }
 
 public double ValorTotalEmEstoque() {
