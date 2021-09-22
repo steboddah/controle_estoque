@@ -23,6 +23,15 @@ Nome=nome;
 Preco=preco;
 Quantidade=quantidade;
 
+  public string GetNome(){
+  return nome;
+  }
+   public double GetPreco(){
+  return preco;
+  }
+   public int GetQuantidade(){
+  return quantidade;
+}
 
 public double ValorTotalEmEstoque() {
 {returnPreco* Quantidade;
