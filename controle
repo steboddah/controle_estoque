@@ -7,8 +7,8 @@ namespace controle_estoque
 {
 public class Produto{
 private string _nome;  //declarando
-private double _preco;
-private int _quantidade;
+private double Preco{get private set;}
+private int Quantidade{get private set;}
 
 
 
@@ -20,8 +20,8 @@ public produto(){ //metodo construtor vazio
 public produto(){string nome,doule preco,int quantidade){
 
 _nome=nome;
-_preco=preco;
-_quantidade=quantidade;
+Preco=preco;
+Quantidade=quantidade;
 
   public string Nome(){
   get{ return _nome;}
@@ -36,7 +36,7 @@ _quantidade=quantidade;
 }
 
 public double ValorTotalEmEstoque() {
-{returnPreco* Quantidade;
+get{returnPreco* Quantidade;
 }
 public void AdicionarProduto(int quantidade)
  {
