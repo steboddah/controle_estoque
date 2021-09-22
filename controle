@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace controle_estoque
 {
-public class Produto{
+private class Produto{
 public stringNome;  //declarando
 public double Preco;
 public int Quantidade;
